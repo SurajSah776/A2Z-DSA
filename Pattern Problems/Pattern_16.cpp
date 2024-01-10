@@ -1,10 +1,10 @@
 /*
-*** Pattern - 11 ***
-1
-0 1
-1 0 1
-0 1 0 1
-1 0 1 0 1
+*** Pattern - 16 ***
+A
+BB
+CCC
+DDDD
+EEEEE
 */
 
 #include <iostream>
@@ -16,22 +16,14 @@ int main()
     cin >> n;
 
     // Function to Print the Pattern
+    char ch = 'A';
     for (int i = 0; i < n; i++)
     {
-        int start = 1;
-        if (i % 2 == 0)
-        {
-            start = 1;
-        }
-        else
-        {
-            start = 0;
-        }
         for (int j = 0; j <= i; j++)
         {
-            cout << start;
-            start = 1 - start;
+            cout << ch << " ";
         }
+        ch++;
         cout << endl;
     }
 
