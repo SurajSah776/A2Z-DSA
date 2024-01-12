@@ -1,11 +1,9 @@
 /*
- *** Pattern - 7 ***
-
-       *
-      ***
-     *****
-    *******
-   *********
+*** Pattern - 17 ***
+   A
+  ABA
+ ABCBA
+ABCDCBA
 */
 
 #include <iostream>
@@ -20,19 +18,23 @@ int main()
     for (int i = 0; i < n; i++)
     {
         // Space
-        for (int j = 0; j < (n - i - 1); j++)
+        for (int j = 0; j < (n - 1 - i); j++)
         {
             cout << " ";
         }
-
-        // Star
-        for (int j = 0; j < (2 * i + 1); j++)
+        // Letter
+        for (char j = 'A'; j < 'A' + i; j++)
         {
-            cout << "*";
+            cout << j;
+        }
+
+        for (char j = 'A' + i; j >= 'A'; j--)
+        {
+            cout << j;
         }
 
         // Space
-        for (int j = 0; j <= (n - i - 1); j++)
+        for (int j = 0; j < (n - 1 - i); j++)
         {
             cout << " ";
         }
