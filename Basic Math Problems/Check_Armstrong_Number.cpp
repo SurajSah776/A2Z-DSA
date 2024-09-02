@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+// Check whether a number is Armstrong or not.
 #include <iostream>
 #include <math.h>
 using namespace std;
