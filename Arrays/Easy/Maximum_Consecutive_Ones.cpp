@@ -1,5 +1,5 @@
-/* Maximum Consecutive Ones
-Problem statement
+/*    Maximum Consecutive Ones
+
 You are given an array ‘ARR’ of length ‘N’ consisting of only ‘0’s and ‘1’s. Your task is to determine the maximum length of the consecutive number of 1’s.
 
 Sample Input 1:
